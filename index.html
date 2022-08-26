@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css file -->
+    <link rel="stylesheet" href="style.css">
+    <!-- js file -->
+    <script src="script.js" defer></script>
+    
+    <title>To Do list</title>
+</head>
+<body>
+    <nav>
+        <div class="container navbar__container">
+            <h1 class="navbar__heading">Welcome <span id="navbarHeading">Test</span>,</h1>
+        </div>
+    </nav>
+
+    <section>
+        <div class="container todo__container">
+            <div class="addnewtask__container">
+                <form>
+                    <input type="text" id="newTask" placeholder="Enter your task">
+                    <button type="submit" id="submitBtn"><span><img src="/icons/submitv3.svg" alt="submit"></span></button>
+                </form>
+                <div class="addnewtask__menu" id="menuBtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <div class="menu__dropdown opened" id="menuDropdown">
+                        <ul id="menuItems">
+                            <li class="active">All</li>
+                            <li>Done</li>
+                            <li>Due</li>
+                            <li class="warning-text">Delete All</li>
+                            <!-- will be added later -->
+                            <!-- <li>Time Fist</li>
+                            <li>Time Last</li> -->
+                        </ul>
+                    </div>
+                    <div class="overlay opened" id="overlay"></div>
+                    <div class="overlay--first" id="overlayFirst">
+                        <div class="overlay--first__container">
+                            <h1>Enter your Name</h1>
+                            <form>
+                                <input type="text" id="userName" required>
+                                <button type="submit" id="submitUserName"><img src="/icons/submitv2.svg" alt="submit name"></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="addedtask__container" id="taskContainer">
+
+                <!-- <div class="task">
+                    <div class="task-info">
+                        <span>Test (click on the check to mark this task completed or the delete button to remove this task from list)</span>
+                    </div>
+                    <div class="task-operations" id="taskOperations">
+                        <button class="markdone"><img src="/icons/done.svg" alt="mark done"></button>
+                        <button class="deletetask"><img src="/icons/trash.svg" alt="delete task"></button>
+                    </div>
+                </div> -->
+
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
